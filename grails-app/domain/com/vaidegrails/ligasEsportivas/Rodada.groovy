@@ -4,9 +4,13 @@ package com.vaidegrails.ligasEsportivas
  */
 class Rodada {
 
-    static hasMany=[partidas: Partida]
+    static belongsTo = [fase: Fase]
+    Integer numero
+
+    static hasMany = [partidas: Partida]
 
     static constraints = {
+        fase unique: ['numero']
     }
 
     static mapping = {

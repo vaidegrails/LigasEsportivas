@@ -9,8 +9,12 @@ class Inscricao {
 
     Vinculo vinculo
     Participacao participacao
+    Date dataInscricao
+    Date dataTermino
 
     static constraints = {
+        vinculo unique: ['participacao']
+        dataTermino nullable: true
     }
 
     static mapping = {

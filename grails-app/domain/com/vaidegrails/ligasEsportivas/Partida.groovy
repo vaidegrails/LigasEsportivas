@@ -17,6 +17,7 @@ class Partida {
     Date dataRealizacao
 
     static constraints = {
+        dataRealizacao nullable: true
     }
 
     static mapping = {

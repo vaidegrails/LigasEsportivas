@@ -9,10 +9,15 @@ package com.vaidegrails.ligasEsportivas
 class Fase {
 
     TipoFase tipoFase
+    Date dataInicio
+    Date dataPrevistaFim
+    Date dataFim
 
+    static belongsTo = [edicao: Edicao]
     static hasMany = [participantes: Participacao, rodadas: Rodada]
 
     static constraints = {
+        dataFim nullable: true
     }
 
     static mapping = {

@@ -11,6 +11,7 @@ class Edicao {
     Integer anoBase
     Regulamento regulamento
     static belongsTo = [campeonato: Campeonato]
+    static hasMany = [fases: Fase]
 
     static constraints = {
         campeonato unique: ['anoBase']

@@ -4,6 +4,10 @@ package com.vaidegrails.ligasEsportivas
  */
 class Pessoa {
 
+    String nome
+    String apelido
+    Date dataNascimento
+
     static constraints = {
     }
 

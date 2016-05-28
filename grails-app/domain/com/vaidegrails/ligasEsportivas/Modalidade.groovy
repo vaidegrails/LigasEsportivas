@@ -6,6 +6,8 @@ package com.vaidegrails.ligasEsportivas
 class Modalidade {
 
     String nome
+
+    //TODO: Modelagem das regras da modalidade
     //static hasMany = [regras: Regra]
 
     static constraints = {
