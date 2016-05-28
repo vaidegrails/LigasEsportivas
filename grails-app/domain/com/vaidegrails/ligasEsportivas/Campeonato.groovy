@@ -10,7 +10,7 @@ class Campeonato {
 
     String nome
     Modalidade modalidade
-//
+
     static hasMany = ['edicoes': Edicao]
     static constraints = {
 

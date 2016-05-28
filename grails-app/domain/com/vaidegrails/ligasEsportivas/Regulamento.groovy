@@ -8,7 +8,7 @@ package com.vaidegrails.ligasEsportivas
  */
 class Regulamento {
 
-    static hasMany = [fases: TipoFase]
+    static hasMany = [tiposFase: TipoFase]
 
     static constraints = {
 

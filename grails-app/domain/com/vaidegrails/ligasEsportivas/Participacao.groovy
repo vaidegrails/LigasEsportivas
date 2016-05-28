@@ -3,13 +3,16 @@
  */
 package com.vaidegrails.ligasEsportivas
 
+/**
+ * Caracteriza a participação de uma determinada equipe em uma edição específica de um campeonato.
+ */
 class Participacao {
 
     Equipe equipe
     Edicao edicao
 
     static constraints = {
-        equip unique: ['edicao']
+        equipe unique: ['edicao']
     }
 
     static mapping = {
